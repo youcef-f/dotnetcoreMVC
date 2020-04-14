@@ -1,0 +1,21 @@
+@model System.Collections.Generic.IList<WebApplicationMVC.Models.Student>
+
+
+
+
+<table class="table">
+
+    <tr>
+        <th>StudentId</th><th>Name</th><th>Score</th>
+
+    </tr>
+       @foreach (var studentItem in @Model)
+        {
+         <tr>
+          <td>@studentItem.StudentId</td>
+          <td>@studentItem.Name</td>
+          <td>@studentItem.Score</td>
+       </tr>
+        }
+</table>
+
